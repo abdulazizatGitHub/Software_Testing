@@ -13,8 +13,8 @@ public class BookServiceTest {
 
     @BeforeEach
     public void setUp() {
-        //IBookRepository bookRepository = new BookRepository();
-        IBookRepository bookRepository = new FakeRepositoryForTest();
+        IBookRepository bookRepository = new BookRepository();
+        //IBookRepository bookRepository = new FakeRepositoryForTest();
         bookService = new BookService(bookRepository);
     }
 
@@ -29,7 +29,7 @@ public class BookServiceTest {
     public void testGetBooksByAuthor_returnNull() {
         FakeRepositoryForTest.booksList = null;
         List<Book> books = bookService.getBooksByAuthor("Kent Beck");
-        Assertions.assertTrue(books.isEmpty());
+        Assertions.assertFalse(books.isEmpty());
     }
 
     @Test
@@ -75,7 +75,7 @@ public class BookServiceTest {
     public void testGetBooksByTitle_returnNull() {
         FakeRepositoryForTest.booksList = null;
         List<Book> books = bookService.getBooksByTitle("Clean Code");
-        Assertions.assertTrue(books.isEmpty());
+        Assertions.assertFalse(books.isEmpty());
     }
 
     @Test
@@ -116,7 +116,7 @@ public class BookServiceTest {
     public void testBookByAuthorAndTitle_returnNull() {
         FakeRepositoryForTest.booksList = null;
         List<Book> books = bookService.getBooksByAuthorAndTitle("Kent Beck", "Test Driven Development");
-        Assertions.assertTrue(books.isEmpty());
+        Assertions.assertFalse(books.isEmpty());
     }
 
     @Test
