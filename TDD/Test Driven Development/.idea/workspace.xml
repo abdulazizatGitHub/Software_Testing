@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f145182e-2bad-436c-84d5-96e06a2e09b9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "abdulazizatGitHub"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/abdulazizatGitHub/Software_Testing",
+    "accountId": "98e3f68d-1de8-4e7d-ba1c-65f79baf20ac"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2hNIydDRNSgC3R0N1jPuX1RKF7B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.BookServiceTest.testBookByAuthorAndTitle.executor": "Run",
+    "JUnit.BookServiceTest.testBookByAuthorAndTitle_NoBookFound.executor": "Run",
+    "JUnit.BookServiceTest.testBookByAuthorAndTitle_emptyAuthorField.executor": "Run",
+    "JUnit.BookServiceTest.testBookByAuthorAndTitle_emptyTitleAndAuthorField.executor": "Run",
+    "JUnit.BookServiceTest.testBookByAuthorAndTitle_emptyTitleField.executor": "Run",
+    "JUnit.BookServiceTest.testBookByAuthorAndTitle_returnNull.executor": "Run",
+    "JUnit.BookServiceTest.testBookByTitle.executor": "Run",
+    "JUnit.BookServiceTest.testBookByTitle_NoBookFound.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByAuthor.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByAuthor_MoreThanOneBookFound.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByAuthor_NoBooksFound.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByAuthor_emptyAuthorField.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByAuthor_returnNull.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByTitle_MoreThanOneBookFound.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByTitle_emptyTitleField.executor": "Run",
+    "JUnit.BookServiceTest.testGetBooksByTitle_returnNull.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/6th Semester/Software Testing/Lab/Test Driven Development"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.BookServiceTest.testGetBooksByTitle_emptyTitleField">
+    <configuration name="BookServiceTest.testBookByAuthorAndTitle_emptyAuthorField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibrarySystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tdd" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tdd.BookServiceTest" />
+      <option name="METHOD_NAME" value="testBookByAuthorAndTitle_emptyAuthorField" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testBookByAuthorAndTitle_emptyTitleAndAuthorField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibrarySystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tdd" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tdd.BookServiceTest" />
+      <option name="METHOD_NAME" value="testBookByAuthorAndTitle_emptyTitleAndAuthorField" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testBookByAuthorAndTitle_emptyTitleField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibrarySystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tdd" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tdd.BookServiceTest" />
+      <option name="METHOD_NAME" value="testBookByAuthorAndTitle_emptyTitleField" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testGetBooksByAuthor_MoreThanOneBookFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibrarySystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tdd" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tdd.BookServiceTest" />
+      <option name="METHOD_NAME" value="testGetBooksByAuthor_MoreThanOneBookFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testGetBooksByTitle_emptyTitleField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibrarySystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.tdd" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tdd.BookServiceTest" />
+      <option name="METHOD_NAME" value="testGetBooksByTitle_emptyTitleField" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookServiceTest.testGetBooksByTitle_emptyTitleField" />
+        <item itemvalue="JUnit.BookServiceTest.testBookByAuthorAndTitle_emptyTitleAndAuthorField" />
+        <item itemvalue="JUnit.BookServiceTest.testBookByAuthorAndTitle_emptyTitleField" />
+        <item itemvalue="JUnit.BookServiceTest.testBookByAuthorAndTitle_emptyAuthorField" />
+        <item itemvalue="JUnit.BookServiceTest.testGetBooksByAuthor_MoreThanOneBookFound" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f145182e-2bad-436c-84d5-96e06a2e09b9" name="Changes" comment="" />
+      <created>1717428365864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717428365864</updated>
+    </task>
+    <servers />
+  </component>
+</project>
