@@ -7,7 +7,7 @@ import com.se.utils.UtilsSet;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class StudentAccountTest extends StudentLoginBase {
+public class test extends StudentLoginBase {
 
 
     @Test
@@ -22,7 +22,7 @@ public class StudentAccountTest extends StudentLoginBase {
 
     }
 
-    @Test(dependsOnMethods = {"verifyStudentIsLoggedIn"})
+    @Test(dependsOnMethods = "verifyStudentIsLoggedIn")
     public void verifyDueExameButtonIsClicked() {
         System.out.println("Starting verifyDueExamButtonIsClicked test");
         NavigationUtil.clickDueExameButton();
@@ -46,10 +46,25 @@ public class StudentAccountTest extends StudentLoginBase {
 
     }
 
-    @Test
-    public void verifyExameTitleLinkIsClicked() {
+    @Test(dependsOnMethods = "verifyDueExameButtonIsClicked")
+    public void verifyExamTitleLinkIsClicked() {
         System.out.println("Starting verifyExameTitleLinkIsClicked test");
-        
+        NavigationUtil.clickQuizTitleLink();
+        System.out.println("The quiz title link is clicked");
+
+        try{
+            int timeoutSeconds = 15;
+
+            UtilsSet.waitForElementToBeVisible(Constants.DueExame.BY_examSummarySection, timeoutSeconds);
+            String examSummarySectionText = UtilsSet.getElementText(Constants.DueExame.BY_examSummarySection);
+            System.out.println("Exam Summary section is visible with text: " + examSummarySectionText);
+            Assert.assertFalse(examSummarySectionText.isEmpty(), "examSummarySection should not be empty");
+            Assert.assertEquals(examSummarySectionText, "Exam Summary", "Mismatch text when the exam title link is clicked");
+            System.out.println("verifyExamTitleLinkIsClicked test completed successfully");
+        } catch (Exception e) {
+            System.err.println("The verifyExamTitleLink was not found or did not behave as expected.");
+            Assert.fail("The verifyExamTitleLink was not found or did not behave as expected.", e);
+        }
     }
 
 }

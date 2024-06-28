@@ -69,6 +69,13 @@ public class Constants {
     public static class DueExame {
         public static final By BY_dueExameButton = By.xpath("//*[@id='Student']/div[1]/div[2]/div/div/a[3]");
         public static final By BY_dueExameSection = By.xpath("//div[@id='body']/div[1]/div[1]/h2[contains(text(),'Exams')]");
+        public static final By BY_examTitleLink = By.xpath("//*[@id='DataTables_Table_0']/tbody/tr/td[2]");
+        public static final By BY_examSummarySection = By.xpath("//*[@id='examsummary']/header/h2[contains(text(),'Quiz 1 SP24 in Software Testing')]");
+        public static final By BY_examTitleSearchField = By.xpath("//*[@id='SearchName']");
+        public static final By BY_examTitleSearchButton = By.xpath("//*[@id='frmAdSearch']/div/div[6]");
+        public static final By BY_examStatusSelector = By.xpath("/html/body/div[4]/div[3]/div[2]/form/div/div[5]/select");
+        public static final By BY_examsTableSectionDisplayed = By.xpath("/html/body/div[4]/div[3]/div[3]/div/table");
+        public static final By BY_noExamsSectionDisplayed = By.xpath("/html/body/div[4]/div[3]/div[3]/div[contains(text(),'You have no exam to view. We suggest you the following:')]");
     }
 
     public static class Common {

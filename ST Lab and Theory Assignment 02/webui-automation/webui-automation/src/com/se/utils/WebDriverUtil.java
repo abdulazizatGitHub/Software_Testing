@@ -3,9 +3,7 @@ package com.se.utils;
 import com.se.TestDriver;
 import com.se.config.ConfigHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -28,14 +26,17 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.logging.Level;
+
+import static com.se.TestDriver.getDriver;
 
 public class WebDriverUtil {
     public static class BrowserCleanup implements Runnable {
         public void run() {
             System.out.println("Cleaning up the browser");
             try {
-                TestDriver.getDriver().quit();
+                getDriver().quit();
             } catch (NullPointerException e) {
                 System.out.println("Browser already shut down.");
             }
@@ -191,5 +192,13 @@ public class WebDriverUtil {
             default:
                 throw new WebDriverException("No browser specified");
         }
+    }
+
+    public static WebElement findElement(By locator) {
+        return getDriver().findElement(locator);
+    }
+
+    public static List<WebElement> findElements(By locator) {
+        return getDriver().findElements(locator);
     }
 }

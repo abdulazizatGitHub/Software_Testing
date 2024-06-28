@@ -604,4 +604,24 @@ public class UtilsSet {
         }
         return elements.get(0);
     }
+
+    @Step
+    public static void scrollToElement(By by) {
+        var element = findElement(by);
+        ((JavascriptExecutor) TestDriver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+    @Step
+    public static boolean isElementVisible(By locator) {
+        try {
+            WebElement element = WebDriverUtil.findElement(locator);
+            return element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        } catch (WebDriverException e) {
+            System.out.println("WebDriverException occurred: " + e.getMessage());
+            return false;
+        }
+    }
+
+
 }
