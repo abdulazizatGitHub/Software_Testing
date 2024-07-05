@@ -35,9 +35,10 @@ public class StudentAccountTest extends StudentLoginBase {
             System.out.println("Home page text: " + homePageText);
 
             Assert.assertFalse(homePageText.isEmpty(), "Home page text should not be empty");
-            Assert.assertEquals(homePageText, "Welcome! Mahad Wajid", "Home page text should be 'Homepage'");
+            Assert.assertEquals(homePageText, "Welcome! Abdul Aziz", "Home page text should be 'Homepage'");
 
             System.out.println("verifySkipButtonAndNavigateToHomePage test completed successfully");
+            Thread.sleep(2000);
         } catch (Exception e) {
             System.err.println("Failed to click Skip button or navigate to Home Page");
             Assert.fail("Failed to click Skip button or navigate to Home Page", e);
@@ -62,6 +63,7 @@ public class StudentAccountTest extends StudentLoginBase {
             Assert.assertFalse(dueExameSectionText.isEmpty(), "dueExameSectionText should not be empty");
             Assert.assertEquals(dueExameSectionText, "Exams", "Mismatch text when the Due Exame button is clicked");
             System.out.println("verifyDueExameButtonIsClicked test completed successfully");
+            Thread.sleep(2000);
         } catch (Exception e) {
             System.err.println("The dueExameSectionElement was not found or did not behave as expected.");
             Assert.fail("The dueExameSectionElement was not found or did not behave as expected.", e);
@@ -88,12 +90,14 @@ public class StudentAccountTest extends StudentLoginBase {
             Assert.assertFalse(examSummarySectionText.isEmpty(), "examSummarySection should not be empty");
             Assert.assertEquals(examSummarySectionText, "Quiz 1 SP24 in Software Testing", "Mismatch text when the exam title link is clicked");
             System.out.println("verifyExamTitleLinkIsClicked test completed successfully");
+            Thread.sleep(2000);
         } catch (Exception e) {
             System.err.println("The verifyExamTitleLink was not found or did not behave as expected.");
             Assert.fail("The verifyExamTitleLink was not found or did not behave as expected.", e);
         }
+
     }
-    @Test(dependsOnMethods = {"verifyStudentIsLoggedIn", "verifyDueExameButtonIsClicked", "verifyExamTitleLinkIsClicked"})
+    @Test(dependsOnMethods = {"verifyStudentIsLoggedIn","verifySkipButtonAndNavigateToHomePage", "verifyDueExameButtonIsClicked", "verifyExamTitleLinkIsClicked"})
     public static void verifyExamResults() {
         System.out.println("Starting verifyExamResults test");
         NavigationUtil.verifyTestResultSDisplayed();
@@ -108,6 +112,7 @@ public class StudentAccountTest extends StudentLoginBase {
             Assert.assertFalse(testResultSectionText.isEmpty(), "testResultSectionText should not be empty");
             Assert.assertEquals(testResultSectionText, "Exam Results of 'Abdul Aziz' (User Name: Fa21-058)", "Mismatch text when the Due Exame button is clicked");
             System.out.println("verifyExamResults test completed successfully");
+            Thread.sleep(2000);
         } catch (Exception e) {
             System.err.println("The testResultSectionText was not found or did not behave as expected.");
             Assert.fail("The testResultSectionText was not found or did not behave as expected.", e);

@@ -77,7 +77,7 @@ public class Constants {
         public static final By BY_examsTableSectionDisplayed = By.xpath("/html/body/div[4]/div[3]/div[3]/div/table");
         public static final By BY_noExamsSectionDisplayed = By.xpath("/html/body/div[4]/div[3]/div[3]/div[contains(text(),'You have no exam to view. We suggest you the following:')]");
         public static final By BY_testResult = By.xpath("/html/body/div[4]/div[3]/div[4]/div/div[1]/a[3]");
-        public static final By BY_testResultSection = By.xpath("/html/body/div[4]/div[3]/div[4]/div/div[2]/div/header[1]/div[1]/h4[contains(text(), 'Exam Results of 'Abdul Aziz' (User Name: Fa21-058)')]");
+        public static final By BY_testResultSection = By.xpath("/html/body/div[4]/div[3]/div[4]/div/div[2]/div/header[1]/div[1]/h4");
         public static  final By BY_Skipbutton = By.xpath("/html/body/div[4]/div[3]/div[1]/div/p/input[2]");
         public static final By BY_HomepageText = By.xpath("/html/body/div[4]/div[3]/div[1]/div/header/h2[contains(text(),'Welcome! Abdul Aziz')]");
     }

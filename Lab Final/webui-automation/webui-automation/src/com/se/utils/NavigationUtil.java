@@ -47,16 +47,9 @@ public class NavigationUtil {
         clickOnElement(Constants.DueExame.BY_examTitleSearchButton);
     }
 
-    @Step("Clicking on the Your Exam with solution")
-    public static void clickExamWithSolutionButton() {
-        clickOnElement(Constants.DueExame.BY_testResult);
-    }
-
     @Step("Verifying Test result is showed")
     public static void verifyTestResultSDisplayed() {
-        clickDueExameButton();
-        clickQuizTitleLink();
-        clickExamWithSolutionButton();
+        clickOnElement(Constants.DueExame.BY_testResult);
     }
     @Step("Clicking on Skip button.")
     public static void clickonskipbutton() {
